@@ -1,0 +1,63 @@
+.ConversationsCard {
+  .card-title {
+    color: #3E82FF;
+    padding: 5px 0;
+  }
+
+  hr {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  dd, dt {
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  dd, 
+  dd .StarRating svg path {
+    color: #3E82FF;
+  }
+
+  dt {
+    width: 60%;
+    font-weight: 500;
+    padding-left: 8px;
+
+    &.highlight {
+      &::before {
+        background-color: #3E82FF;
+        z-index: 0;
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        margin-top: -4px;
+        margin-left: -8px;
+        border-radius: 50%;
+        opacity: 0.2;
+      }
+
+      svg path {
+        color: #3E82FF;
+      }
+    }
+
+    > svg {
+      position: relative;
+      margin-right: 15px;
+      z-index: 1;
+      font-size: 14px;
+    }
+  }
+
+  dd {
+    width: 40%;
+    text-align: right;
+  }
+}

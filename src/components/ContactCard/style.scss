@@ -1,0 +1,37 @@
+.ContactCard {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+  }
+
+  .card-text {
+    text-align: center;
+    margin-bottom: 8px;
+
+    &.email {
+      font-weight: 500;
+    }
+  }
+
+  .Image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #EEF3FF;
+  }
+
+  .actions {
+    padding: 20px 0 10px 0;
+  }
+}

@@ -1,0 +1,66 @@
+.StatisticCard {
+  .card-body {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+
+    svg {
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+  }
+
+  .info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .value {
+      margin-bottom: -4px;
+      font-size: 35px;
+    }
+  }
+
+  &.blue {
+    .icon { color: #377DFF; }
+    .icon::before { background-color: #377DFF; }
+  }
+
+  &.green {
+    .icon { color: #00C9A7; }
+    .icon::before { background-color: #00C9A7; }
+  }
+
+  &.cyan {
+    .icon { color: #02DFFC; }
+    .icon::before { background-color: #02DFFC; }
+  }
+
+  &.orange {
+    .icon { color: #FFC105; }
+    .icon::before { background-color: #FFC105; }
+  }
+
+  &.red {
+    .icon { color: #DE4437; }
+    .icon::before { background-color: #DE4437; }
+  }
+}

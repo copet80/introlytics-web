@@ -1,0 +1,8 @@
+.Image {
+  background-size: cover;
+  background-position: center center;
+
+  &.roundedCircle {
+    border-radius: 50%;
+  }
+}

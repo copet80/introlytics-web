@@ -1,0 +1,25 @@
+.ProfileCard {
+  display: flex;
+
+  .Image {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .greeting {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}

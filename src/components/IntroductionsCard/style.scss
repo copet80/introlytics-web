@@ -1,0 +1,22 @@
+.IntroductionsCard {
+  .card-title {
+    color: #FFC105;
+  }
+
+  dd, 
+  dd .StarRating svg path {
+    color: #FFC105;
+  }
+
+  dt {
+    &.highlight {
+      &::before {
+        background-color: #FFC105;
+      }
+
+      svg path {
+        fill: #FFC105;
+      }
+    }
+  }
+}
